@@ -1,0 +1,12 @@
+# Programa que imprime a sequência de Fibonacci até um valor limite
+
+
+limite = int(input("Digite um número inteiro positivo: "))
+
+a, b = 0, 1
+
+print("Sequência de Fibonacci até", limite, ":")
+
+while a <= limite:
+    print(a, end=" ")  # imprime na mesma linha
+    a, b = b, a + b   # atualiza os termos
